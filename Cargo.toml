@@ -1,0 +1,13 @@
+[package]
+    edition = "2021"
+    name    = "proc-util"
+    version = "0.1.0"
+
+[dependencies]
+    itertools   = "0.12"
+    proc-macro2 = "1.0"
+    quote       = "1.0"
+
+[dependencies.syn]
+    features = ["extra-traits", "full"]
+    version  = "2.0"
