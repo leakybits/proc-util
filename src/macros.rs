@@ -2,9 +2,7 @@
 #[macro_export]
 macro_rules! identify {
     ($expr:expr) => {{
-        let expr = ::quote::format_ident!("_{}", $expr);
-
-        ::quote::quote!(#expr)
+        ::quote::format_ident!("_{}", $expr)
     }};
 }
 
